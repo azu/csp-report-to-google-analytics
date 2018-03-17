@@ -7,6 +7,10 @@
 This library should be used with [analytics.js](https://developers.google.com/analytics/devguides/collection/analyticsjs/ "analytics.js").
 This library does not work with `gtag.js`. Please see [gtag.js API? · Issue #202 · googleanalytics/autotrack](https://github.com/googleanalytics/autotrack/issues/202 "gtag.js API? · Issue #202 · googleanalytics/autotrack").
 
+You can load this library from [unpkg](https://unpkg.com/ "unpkg") CDN.
+
+- <https://unpkg.com/csp-report-to-google-analytics/dist/csp-report-to-google-analytics.min.js>
+
 ```html
 <!-- Google Analytics -->
 <script>
@@ -21,6 +25,8 @@ ga('require', 'csp-report');
 <!-- Load csp-report-to-google-analytics plugin -->
 <script async src='https://unpkg.com/csp-report-to-google-analytics@latest'></script>
 ```
+
+### CSP
 
 You need to enable CSP on your site.
 
