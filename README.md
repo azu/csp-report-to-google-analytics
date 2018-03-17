@@ -1,16 +1,11 @@
 # csp-report-to-google-analytics
 
-CSP report to Google Analytics.
-
-## Install
-
-Install with [npm](https://www.npmjs.com/):
-
-    npm install csp-report-to-google-analytics
+[Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy "Content-Security-Policy")(CSP) report to Google Analytics.
 
 ## Usage
 
 This library should be used with [analytics.js](https://developers.google.com/analytics/devguides/collection/analyticsjs/ "analytics.js").
+This library does not work with `gtag.js`. Please see [gtag.js API? · Issue #202 · googleanalytics/autotrack](https://github.com/googleanalytics/autotrack/issues/202 "gtag.js API? · Issue #202 · googleanalytics/autotrack").
 
 ```html
 <!-- Google Analytics -->
@@ -18,19 +13,42 @@ This library should be used with [analytics.js](https://developers.google.com/an
 window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 ga('create', 'UA-XXXXX-Y', 'auto');
 ga('send', 'pageview');
+// require csp-report-to-google-analytics plugin
 ga('require', 'csp-report');
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 <!-- End Google Analytics -->
 <!-- Load csp-report-to-google-analytics plugin -->
-<script async src=''></script>
+<script async src='https://unpkg.com/csp-report-to-google-analytics@latest'></script>
 ```
 
+You need to enable CSP on your site.
+
+The [Content-Security-Policy-Report-Only](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only "Content-Security-Policy-Report-Only") HTTP Header is useful to found mixed contents on your site.
+
+```
+Content-Security-Policy-Report-Only: default-src https:;
+```
+
+Also, `<meta>` tag can enable `Content-Security-Policy`, but `<meta>` tag does not support ``Content-Security-Policy-Report-Only` header.
+
+```html
+<!-- Work -->
+<meta http-equiv="Content-Security-Policy" content="default-src https:">
+<!-- Not Work -->
+<meta http-equiv="Content-Security-Policy-Report-Only" content="default-src https:">
+```
 
 ## Options
 
 - `debug`: boolean
     - Default: `false`
+
+```Js
+ga('require', 'csp-report', {
+    debug: true
+});
+```
 
 ## Default field values
 
