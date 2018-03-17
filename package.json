@@ -1,0 +1,41 @@
+{
+  "name": "csp-report-to-google-analytics",
+  "version": "1.0.0",
+  "description": "CSP report to Google Analytics.",
+  "keywords": [
+    "CSP",
+    "HTTPS",
+    "Violation",
+    "analytics",
+    "google",
+    "googleanalytics"
+  ],
+  "homepage": "https://github.com/azu/csp-report-to-google-analytics",
+  "bugs": {
+    "url": "https://github.com/azu/csp-report-to-google-analytics/issues"
+  },
+  "license": "MIT",
+  "author": "azu",
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "main": "lib/csp-report-to-google-analytics.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/csp-report-to-google-analytics.git"
+  },
+  "scripts": {
+    "build": "bili --format cjs,es,umd,umd-min src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "bili": "^3.0.7",
+    "express": "^4.16.3",
+    "express-csp-header": "^2.2.0"
+  }
+}
