@@ -22,9 +22,10 @@ export class CSPReportPlugin {
     report = (event) => {
         const defaultFields = {
             hitType: 'event',
-            eventCategory: 'CSP',
+            eventCategory: 'CSP Report',
             eventAction: event.violatedDirective,
             eventLabel: event.blockedURI,
+            nonInteraction: true,
         };
         if (this.config.debug) {
             console.log("CSPReportPlugin: send", defaultFields);
