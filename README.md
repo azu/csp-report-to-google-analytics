@@ -26,6 +26,11 @@ ga('require', 'csp-report');
 <script async src='https://unpkg.com/csp-report-to-google-analytics@latest'></script>
 ```
 
+You have already introduced `analytics.js`, then add these to existing analytic setting.
+
+- `ga('require', 'csp-report');`
+- `<script async src='https://unpkg.com/csp-report-to-google-analytics@latest'></script>`
+
 ### CSP
 
 You need to enable CSP on your site.
