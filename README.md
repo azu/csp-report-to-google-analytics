@@ -68,7 +68,7 @@ ga('require', 'csp-report', {
 | [`hitType`](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#hitType) | `'pageview'`                                                 |
 | [`eventCategory`](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#eventCategory) | `'CSP Report'`                                                      |
 | [`eventAction`](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#eventAction) | [`SecurityPolicyViolationEvent.violatedDirective`](https://developer.mozilla.org/en-US/docs/Web/API/SecurityPolicyViolationEvent/violatedDirective "SecurityPolicyViolationEvent.violatedDirective")                                                   |
-| [`eventLabel`](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#eventLabel) | [SecurityPolicyViolationEvent.blockedURI](https://developer.mozilla.org/en-US/docs/Web/API/SecurityPolicyViolationEvent/blockedURI "SecurityPolicyViolationEvent.blockedURI") |
+| [`eventLabel`](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#eventLabel) | [`SecurityPolicyViolationEvent.blockedURI`](https://developer.mozilla.org/en-US/docs/Web/API/SecurityPolicyViolationEvent/blockedURI "SecurityPolicyViolationEvent.blockedURI") |
 | [`nonInteraction`](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#nonInteraction) | `true`                                                       |
 
 ## Changelog
