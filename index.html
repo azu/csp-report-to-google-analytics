@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CSP Report Example</title>
-    <meta http-equiv="Content-Security-Policy" content="default-src https: 'unsafe-eval' 'unsafe-inline';">
+    <meta http-equiv="Content-Security-Policy" content="img-src https: 'unsafe-eval' 'unsafe-inline';">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2184335-19"></script>
     <script>
@@ -20,7 +20,7 @@
     <script src="/dist/csp-report-to-google-analytics.js"></script>
 </head>
 <body>
-<p>CSP: "default-src https: 'unsafe-eval' 'unsafe-inline';" enabled</p>
+<p>CSP: "img-src https: 'unsafe-eval' 'unsafe-inline';" enabled</p>
 <img src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="http image is here"/>
 <p>GitHub: <a href="https://github.com/azu/csp-report-to-google-analytics">Source</a></p>
 </body>

@@ -3,7 +3,7 @@
 
 export class CSPReportPlugin {
     constructor(tracker, config = {}) {
-        console.log("Initialize CSPReportPlugin", tracker,config);
+        console.log("Initialize CSPReportPlugin", tracker, config);
         if (config.debug) {
         }
         this.tracker = tracker;
