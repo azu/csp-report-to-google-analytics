@@ -3,8 +3,8 @@
 
 export class CSPReportPlugin {
     constructor(tracker, config = {}) {
-        console.log("Initialize CSPReportPlugin", tracker, config);
         if (config.debug) {
+            console.log("CSPReportPlugin: Initialize", config);
         }
         this.tracker = tracker;
         this.config = config;
@@ -26,7 +26,9 @@ export class CSPReportPlugin {
             eventAction: event.violatedDirective,
             eventLabel: event.blockedURI,
         };
-        console.log("defaultFields", defaultFields);
+        if (this.config.debug) {
+            console.log("CSPReportPlugin: send", defaultFields);
+        }
         this.tracker.send("event", defaultFields);
     };
 }
