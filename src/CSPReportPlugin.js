@@ -2,7 +2,10 @@
 "use strict";
 
 export class CSPReportPlugin {
-    constructor(tracker, config) {
+    constructor(tracker, config = {}) {
+        console.log("Initialize CSPReportPlugin", tracker,config);
+        if (config.debug) {
+        }
         this.tracker = tracker;
         this.config = config;
         this.onSecurityPolicyViolation(this.report);
