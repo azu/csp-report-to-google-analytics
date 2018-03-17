@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>CSP Report Example</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src https:">
     <script>
         window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
         ga('create', 'UA-2184335-19', 'auto');
-        ga('require', 'csp-report');
+        ga('require', 'csp-report', {
+            debug: true
+        });
     </script>
     <script async src='https://www.google-analytics.com/analytics.js'></script>
     <script src="/dist/csp-report-to-google-analytics.js"></script>
 </head>
 <body>
-<p>CSP: block-all-mixed-content enabled</p>
+<p>CSP: `default-src https:` enabled</p>
 <img src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"/>
 </body>
 </html>
