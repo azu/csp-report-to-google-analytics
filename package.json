@@ -20,7 +20,7 @@
     "dist/",
     "src/"
   ],
-  "main": "lib/csp-report-to-google-analytics.js",
+  "main": "dist/csp-report-to-google-analytics.js",
   "directories": {
     "lib": "lib",
     "test": "test"

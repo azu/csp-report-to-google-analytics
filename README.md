@@ -10,6 +10,29 @@ Install with [npm](https://www.npmjs.com/):
 
 ## Usage
 
+This library should be used with [analytics.js](https://developers.google.com/analytics/devguides/collection/analyticsjs/ "analytics.js").
+
+```html
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-XXXXX-Y', 'auto');
+ga('send', 'pageview');
+ga('require', 'csp-report');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+<!-- Load csp-report-to-google-analytics plugin -->
+<script async src=''></script>
+```
+
+
+## Options
+
+- `debug`: boolean
+    - Default: `false`
+
+## Default field values
 
 | Field                                                        | Value                                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
