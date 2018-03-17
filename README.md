@@ -23,13 +23,13 @@ ga('require', 'csp-report');
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 <!-- End Google Analytics -->
 <!-- Load csp-report-to-google-analytics plugin -->
-<script async src='https://unpkg.com/csp-report-to-google-analytics@latest'></script>
+<script async src='https://unpkg.com/csp-report-to-google-analytics/dist/csp-report-to-google-analytics.min.js'></script>
 ```
 
 You have already introduced `analytics.js`, then add these to existing analytic setting.
 
 - `ga('require', 'csp-report');`
-- `<script async src='https://unpkg.com/csp-report-to-google-analytics@latest'></script>`
+- `<script async src='https://unpkg.com/csp-report-to-google-analytics/dist/csp-report-to-google-analytics.min.js'></script>`
 
 ### CSP
 
