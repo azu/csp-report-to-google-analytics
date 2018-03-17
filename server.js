@@ -9,6 +9,5 @@ app.use(csp({
     },
     reportOnly: true
 }));
-const path = require("path");
-app.use(express.static(path.join(__dirname, "..")));
+app.use(express.static(__dirname));
 app.listen(3000, () => console.log('Example app listening on port http://localhost:3000/'));

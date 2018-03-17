@@ -30,8 +30,9 @@
     "url": "https://github.com/azu/csp-report-to-google-analytics.git"
   },
   "scripts": {
+    "start": "node ./server.js",
     "build": "bili --format cjs,es,umd,umd-min src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "bili": "^3.0.7",
