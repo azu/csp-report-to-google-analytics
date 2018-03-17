@@ -50,6 +50,8 @@ Also, `<meta>` tag can enable `Content-Security-Policy`, but `<meta>` tag does n
 <meta http-equiv="Content-Security-Policy-Report-Only" content="default-src https:">
 ```
 
+For more information about CSP, see [Content Security Policy CSP Reference & Examples](https://content-security-policy.com/ "Content Security Policy CSP Reference &amp; Examples").
+
 ## Options
 
 - `debug`: boolean
