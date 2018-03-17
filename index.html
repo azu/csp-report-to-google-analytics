@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <title>CSP Report Example</title>
     <meta http-equiv="Content-Security-Policy" content="default-src https:">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2184335-19"></script>
     <script>
-        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-        ga('create', 'UA-2184335-19', 'auto');
-        ga('require', 'csp-report', {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-2184335-19');
+        gtag('require', 'csp-report', {
             debug: true
         });
     </script>
-    <script async src='https://www.google-analytics.com/analytics.js'></script>
+
     <script src="/dist/csp-report-to-google-analytics.js"></script>
 </head>
 <body>
