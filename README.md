@@ -52,6 +52,15 @@ Also, `<meta>` tag can enable `Content-Security-Policy`, but `<meta>` tag does n
 
 For more information about CSP, see [Content Security Policy CSP Reference & Examples](https://content-security-policy.com/ "Content Security Policy CSP Reference &amp; Examples").
 
+### Tips
+
+You should allow to `http://www.google-analytics.com/*` on HTTP site.
+Google Analytics use HTTP 
+
+```
+Content-Security-Policy-Report-Only: default-src https: http://www.google-analytics.com/* 'unsafe-eval' 'unsafe-inline';
+```
+
 ## Options
 
 - `debug`: boolean
@@ -83,7 +92,7 @@ Results:
 
 ![image](https://monosnap.com/file/T6PG3DJYTrCCtkpaGf7iAIL2bknlPm.png)
 
-![image](https://monosnap.com/file/uGnLMZmulmwQPtCMetB9lM5ITdEkFz.png)
+![image](https://monosnap.com/file/nLN63lZGRFY5vyhJE5dZi7HHSFF33f.png)
 
 ## Changelog
 
