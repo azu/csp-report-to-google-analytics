@@ -73,15 +73,21 @@ ga('require', 'csp-report', {
 | [`eventLabel`](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#eventLabel) | [`SecurityPolicyViolationEvent.blockedURI`](https://developer.mozilla.org/en-US/docs/Web/API/SecurityPolicyViolationEvent/blockedURI "SecurityPolicyViolationEvent.blockedURI") |
 | [`nonInteraction`](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#nonInteraction) | `true`                                                       |
 
+## Example
+
+`efcl.info` introduce this plugin:
+
+- [Add CSP report by azu · Pull Request #158 · efcl/efcl.github.io](https://github.com/efcl/efcl.github.io/pull/158 "Add CSP report by azu · Pull Request #158 · efcl/efcl.github.io")
+
+Results:
+
+![image](https://monosnap.com/file/T6PG3DJYTrCCtkpaGf7iAIL2bknlPm.png)
+
+![image](https://monosnap.com/file/uGnLMZmulmwQPtCMetB9lM5ITdEkFz.png)
+
 ## Changelog
 
 See [Releases page](https://github.com/azu/csp-report-to-google-analytics/releases).
-
-## Running tests
-
-Install devDependencies and Run `npm test`:
-
-    npm i -d && npm test
 
 ## Contributing
 
